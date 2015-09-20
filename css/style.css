@@ -656,7 +656,10 @@ h4 {
           .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper .card-left {
             display: table-footer-group; }
           .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper .card-right {
-            display: table-header-group; } }
+            margin-top: 70px; } }
+        @media (max-width: 406px) {
+          .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper .card-right {
+            margin-top: 118px; } }
         .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper > div {
           padding-left: 15px;
           padding-right: 15px;
@@ -805,7 +808,9 @@ h4 {
         @media (max-width: 767px) {
           .main-wrapper .s5-wrapper-outer .s5-wrapper #title-card {
             height: auto;
-            margin-bottom: 20px; } }
+            margin-bottom: 20px;
+            position: absolute;
+            top: 0;} }
         .main-wrapper .s5-wrapper-outer .s5-wrapper #title-card .card-inner {
           position: relative;
           width: 100%;
@@ -873,10 +878,9 @@ h4 {
       line-height: 28px;
       font-weight: 400;
       color: #303030; }
-    .main-footer-wrapper .footer-logo-wrapper .venture-logo img {
-      width: 100%;
-      height: 85px;
-    }
+    .main-footer-wrapper .footer-logo-wrapper .venture-logo {
+      display: inline-block;
+      margin: 10px 0;}
   .main-footer-wrapper .footer-social-wrapper .footer-social-inner {
     padding: 48px 0 84px;
     border-top: 1px solid #eaeaea; }
