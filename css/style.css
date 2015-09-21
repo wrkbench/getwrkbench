@@ -656,9 +656,6 @@ h4 {
           .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper .card-left {
             display: table-footer-group; }
           .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper .card-right {
-            margin-top: 70px; } }
-        @media (max-width: 406px) {
-          .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper .card-right {
             margin-top: 118px; } }
         .main-wrapper .s5-wrapper-outer .s5-wrapper .card-wrapper > div {
           padding-left: 15px;
@@ -820,6 +817,14 @@ h4 {
             letter-spacing: 1.9px;
             margin-bottom: 22px;
             margin-right: 18px; }
+            .main-wrapper .s5-wrapper-outer .s5-wrapper #title-card .card-inner h1 {
+              padding-top: 200px;
+              margin-right: 20px;}
+              @media (max-width: 767px) {
+                .main-wrapper .s5-wrapper-outer .s5-wrapper #title-card .card-inner h1 {
+                  text-align: center;
+                  font-size: 26px;
+                  padding-top: 48px;}}
             .main-wrapper .s5-wrapper-outer .s5-wrapper #title-card .card-inner h1 b {
               border-bottom: 5px solid #8bc34a;
               padding-bottom: 17px; }
