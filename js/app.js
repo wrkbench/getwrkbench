@@ -91,7 +91,7 @@ jQuery.noConflict();
 
   $(window).load(function() {
     /* Act on the event */
-      $('#preloader').fadeOut(400, function(){
+      //$('#preloader').fadeOut(400, function(){
         $('body').removeClass('loading');
 
         $(this).scrollTop(0);
@@ -101,6 +101,6 @@ jQuery.noConflict();
           tmTablet.play();
           controller.addScene(scene);
         }, 500);
-      });
+      //});
   });
-})(jQuery);  	
+})(jQuery);
