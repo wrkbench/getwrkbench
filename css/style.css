@@ -993,9 +993,29 @@ h4 {
   }
 }
 
-.newsletter-form input {
+.newsletter-form input[type="email"] {
   width: 275px;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 555px) {
+
+  .newsletter-form input[type="email"] {
+    width: initial;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input[type="email"] {
+    width: 234px;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
