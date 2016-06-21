@@ -44,7 +44,7 @@ jQuery.noConflict();
           top: 50
         }});
 
-        TweenMax.set($('.btn'), {css:{
+        TweenMax.set($('.btn:not(#mc-embedded-subscribe)'), {css:{
           opacity: 0, 
           scale: 0
         }});

@@ -978,4 +978,24 @@ h4 {
 .loading .main-header-wrapper, .loading .main-wrapper, .loading .main-footer-wrapper {
   opacity: 0 !important; }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 70px;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter-form {
+    bottom: 0;
+    top: 70px;
+  }
+}
+
+.newsletter-form input {
+  width: 275px;
+  padding: 0 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
