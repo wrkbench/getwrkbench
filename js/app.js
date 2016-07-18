@@ -14,6 +14,7 @@ jQuery.noConflict();
   $(function() {
 
   	var wh = $('.window-height');
+    $('.venobox').venobox();
 
     if (viewportSize.getWidth() < 768) { var mobile = true; }
     else { var mobile = false; }

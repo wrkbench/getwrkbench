@@ -25,27 +25,27 @@ jQuery.noConflict();
 
     // Header animation
         TweenMax.set($('.logo'), {css:{
-          opacity: 0, 
+          opacity: 0,
           top: -50
         }});
 
         TweenMax.set($('.header-text-main'), {css:{
-          opacity: 0, 
+          opacity: 0,
           top: -50
         }});
 
         TweenMax.set($('.header-text-secondary'), {css:{
-          opacity: 0, 
+          opacity: 0,
           left: -20
         }});
 
         TweenMax.set($('.header-message'), {css:{
-          opacity: 0, 
+          opacity: 0,
           top: 50
         }});
 
         TweenMax.set($('.btn:not(#mc-embedded-subscribe)'), {css:{
-          opacity: 0, 
+          opacity: 0,
           scale: 0
         }});
 
@@ -59,10 +59,10 @@ jQuery.noConflict();
         }});
 
         // Tablet
-          tmTablet.add(TweenMax.to(section[0].animation[0], 2, 
-          { 
-            bottom: -237,  
-            ease: Elastic. easeOut.config(0.4, 0.4) 
+          tmTablet.add(TweenMax.to(section[0].animation[0], 2,
+          {
+            bottom: -237,
+            ease: Elastic. easeOut.config(0.4, 0.4)
           }), "tablet");
 
         // Header
@@ -108,10 +108,8 @@ jQuery.noConflict();
         // Text
           TweenMax.set(section[0].animation[19], {css:{opacity: 0, scale: 0}});
           tmTablet.add(TweenMax.to(section[0].animation[18], 0.5, { delay: 0.3, opacity: 1, left: 0, ease: Back. easeOut.config(2) }), "tablet");
-          tmTablet.add(TweenMax.to(section[0].animation[19], 0.3, { delay: 0.5, opacity: 1, scale: 1, ease: Back. easeOut.config(2) }), "tablet");    
-
-        // Text under button
-          tmTablet.add(TweenMax.to(section[0].animation[20], 0.3, { delay: 0.5, top: 15, opacity: 1, ease: Back. easeOut.config(2) }), "tablet");    
+          tmTablet.add(TweenMax.to(section[0].animation[19], 0.3, { delay: 0.5, opacity: 1, scale: 1, ease: Back. easeOut.config(2) }), "tablet");
+          tmTablet.add(TweenMax.to(section[0].animation[20], 0.3, { delay: 0.5, opacity: 1, scale: 1, ease: Back. easeOut.config(2) }), "tablet");
 
     /////////////////////////////////////////////////////////
 
@@ -123,8 +121,8 @@ jQuery.noConflict();
       TweenMax.set($('#list-item-4'), {css:{opacity: 0, right: -300}});
       TweenMax.set(section[1].animation[2], {css:{opacity: 0, top: 50}});
 
-      TweenMax.set('#table', {css:{ 
-        top: -1750, 
+      TweenMax.set('#table', {css:{
+        top: -1750,
         position: 'absolute',
         left: '50%',
         marginLeft: -265
@@ -135,7 +133,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight(),
         offset: viewportSize.getHeight()/-2
       })
-      .setTween(new TimelineMax().to('#table', 1, 
+      .setTween(new TimelineMax().to('#table', 1,
         {
           top: 0,
            ease: Power1.easeOut
@@ -147,19 +145,19 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()/6,
         offset: viewportSize.getHeight()/3
       })
-      .setTween(new TimelineMax().to('#stl', 2, 
+      .setTween(new TimelineMax().to('#stl', 2,
         {
           top: 0,
           opacity: 1
         }
-      )); // Show table indicators 
+      )); // Show table indicators
 
       scene[1] = new ScrollMagic.Scene({
         triggerElement: section[1].name,
-        
+
         duration: viewportSize.getHeight()-viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#list-item-1', 1, 
+      .setTween(new TimelineMax().to('#list-item-1', 1,
         {
           left: 0,
           opacity: 1
@@ -168,10 +166,10 @@ jQuery.noConflict();
 
       scene[2] = new ScrollMagic.Scene({
         triggerElement: section[1].name,
-        
+
         duration: viewportSize.getHeight()-viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#list-item-2', 1, 
+      .setTween(new TimelineMax().to('#list-item-2', 1,
         {
           right: 0,
           opacity: 1
@@ -180,10 +178,10 @@ jQuery.noConflict();
 
       scene[3] = new ScrollMagic.Scene({
         triggerElement: section[1].name,
-        
+
         duration: viewportSize.getHeight()-viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#list-item-3', 1, 
+      .setTween(new TimelineMax().to('#list-item-3', 1,
         {
           left: 0,
           opacity: 1
@@ -192,76 +190,76 @@ jQuery.noConflict();
 
       scene[4] = new ScrollMagic.Scene({
         triggerElement: section[1].name,
-        
+
         duration: viewportSize.getHeight()-viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#list-item-4', 1, 
+      .setTween(new TimelineMax().to('#list-item-4', 1,
         {
           right: 0,
           opacity: 1
         }
       ));
 
-      TweenMax.set(section[1].animation[2], {css:{ 
+      TweenMax.set(section[1].animation[2], {css:{
         bottom: '10%',
         left: '1%'
-      }});      
+      }});
 
       scene[5] = new ScrollMagic.Scene({
         triggerElement: section[1].name,
         duration: viewportSize.getHeight()-viewportSize.getHeight()/2,
         offset: viewportSize.getHeight()/10
       })
-      .setTween(new TimelineMax().to(section[1].animation[2], 1, 
+      .setTween(new TimelineMax().to(section[1].animation[2], 1,
         {
           top: 0,
           opacity: 1
         }
-      )); // Show list  
+      )); // Show list
 
     /////////////////////////////////////////////////////////
 
     // Card animation
 
-      TweenMax.set($('#card-3'), {css:{ 
+      TweenMax.set($('#card-3'), {css:{
         left: viewportSize.getWidth()/-2,
         position: 'absolute',
         bottom: -64
       }});
 
-      TweenMax.set($('#card-1'), {css:{ 
+      TweenMax.set($('#card-1'), {css:{
         top: 108,
-        right: -80 
+        right: -80
       }});
 
-      TweenMax.set($('#card-4'), {css:{ 
+      TweenMax.set($('#card-4'), {css:{
         bottom: -472,
         left: 202,
-        position: 'absolute' 
-      }});
-
-      TweenMax.set($('#card-5'), {css:{ 
-        bottom: 58,
-        left: 172,
-        position: 'absolute' 
-      }});
-
-      TweenMax.set($('#card-2'), {css:{ 
-        top: 0,
-        left: -100 
-      }});
-
-      TweenMax.set($('.card'), {css:{ 
         position: 'absolute'
       }});
 
-      TweenMax.set($('#title-card'), {css:{ 
+      TweenMax.set($('#card-5'), {css:{
+        bottom: 58,
+        left: 172,
+        position: 'absolute'
+      }});
+
+      TweenMax.set($('#card-2'), {css:{
+        top: 0,
+        left: -100
+      }});
+
+      TweenMax.set($('.card'), {css:{
+        position: 'absolute'
+      }});
+
+      TweenMax.set($('#title-card'), {css:{
         position: 'absolute',
         right: 155,
         top: -118
       }});
 
-      TweenMax.set($('#small-cards-wrapper'), {css:{ 
+      TweenMax.set($('#small-cards-wrapper'), {css:{
         opacity: 0,
         top: 100
       }});
@@ -271,7 +269,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()*2,
         offset: viewportSize.getHeight()/-2
       })
-      .setTween(new TimelineMax().to('#card-1', 1, 
+      .setTween(new TimelineMax().to('#card-1', 1,
         {
           right: 0
         }
@@ -282,7 +280,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()*2,
         offset: viewportSize.getHeight()/-2
       })
-      .setTween(new TimelineMax().to('#card-2', 1, 
+      .setTween(new TimelineMax().to('#card-2', 1,
         {
           left: 0
         }
@@ -293,7 +291,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()*2,
         offset: viewportSize.getHeight()/-2
       })
-      .setTween(new TimelineMax().to('#card-5', 1, 
+      .setTween(new TimelineMax().to('#card-5', 1,
         {
           left: 112
         }
@@ -322,7 +320,7 @@ jQuery.noConflict();
         offset: -200,
         duration: viewportSize.getHeight()
       })
-      .setTween(new TimelineMax().to('#title-card', 1, 
+      .setTween(new TimelineMax().to('#title-card', 1,
         {
           right: 15
         }
@@ -333,7 +331,7 @@ jQuery.noConflict();
         offset: -200,
         duration: viewportSize.getHeight() + viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#s5a2', 1, 
+      .setTween(new TimelineMax().to('#s5a2', 1,
         {
           opacity: 1,
           top: 0
@@ -344,7 +342,7 @@ jQuery.noConflict();
         triggerElement: '#s5',
         duration: viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#s5a1', 1, 
+      .setTween(new TimelineMax().to('#s5a1', 1,
         {
           opacity: 1,
           top: 0
@@ -356,7 +354,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()/2,
         offset: viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#s5a3', 1, 
+      .setTween(new TimelineMax().to('#s5a3', 1,
         {
           opacity: 1,
           top: 0
@@ -368,7 +366,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()/2,
         offset: viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#s5a4', 1, 
+      .setTween(new TimelineMax().to('#s5a4', 1,
         {
           opacity: 1,
           top: 0
@@ -380,7 +378,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight()/2,
         offset: viewportSize.getHeight()*(-2/3)
       })
-      .setTween(new TimelineMax().to('#small-cards-wrapper', 1, 
+      .setTween(new TimelineMax().to('#small-cards-wrapper', 1,
         {
           opacity: 1,
           top: 0
@@ -391,7 +389,7 @@ jQuery.noConflict();
         triggerElement: '#s5',
         duration: viewportSize.getHeight()
       })
-      .setTween(new TimelineMax().to('#s5a9', 1, 
+      .setTween(new TimelineMax().to('#s5a9', 1,
         {
           top: -60
         }
@@ -402,7 +400,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight(),
         offset: viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#s5a10', 1, 
+      .setTween(new TimelineMax().to('#s5a10', 1,
         {
           top: -60
         }
@@ -413,7 +411,7 @@ jQuery.noConflict();
         duration: viewportSize.getHeight(),
         offset: viewportSize.getHeight()/2
       })
-      .setTween(new TimelineMax().to('#s5a11', 1, 
+      .setTween(new TimelineMax().to('#s5a11', 1,
         {
           top: -60
         }

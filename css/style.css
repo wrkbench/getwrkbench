@@ -246,10 +246,25 @@ h4 {
       margin-top: 11px;
       position: relative; }
     .main-header-wrapper .main-header .btn {
-      width: 373px; }
+      width: 373px;
+      display: block;
+      margin: 0 auto 10px;  }
       @media (max-width: 767px) {
         .main-header-wrapper .main-header .btn {
           width: auto; } }
+    .main-header-wrapper .main-header .btn .btn-text-icon svg {
+      width: 35px;
+      height: 25px;
+      position: relative;
+      bottom: -7px;
+      margin-right: 10px;
+      color: white;
+      fill: white;
+      margin-top: -10px;
+    }
+.main-header-wrapper .main-header .btn:hover .btn-text-icon svg {
+      fill: #03a9f4;
+    }
   .main-header-wrapper .s1-wrapper {
     height: 100%; }
     .main-header-wrapper .s1-wrapper .section-inner:after {
